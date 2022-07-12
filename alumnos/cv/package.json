@@ -1,0 +1,21 @@
+{
+	"name": "cv",
+	"version": "1.0.0",
+	"description": "Miracle lab exercises 2022",
+	"main": "app.js",
+	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"start": "node ./build/app.js",
+		"prestart": "npm install && npm run build",
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,scss,html}\""
+	},
+	"author": "Carlos Vanzetto",
+	"license": "ISC",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.30.6",
+		"@typescript-eslint/parser": "^5.30.6",
+		"eslint": "^8.19.0",
+		"prettier": "^2.7.1",
+		"typescript": "^4.7.4"
+	}
+}
