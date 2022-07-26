@@ -4,6 +4,6 @@ Exercise 4 : Add even numbers between 1 and 9 in descending order to an array ag
 */
 let arrNum = [];
 for (let i = 4; i > 0; i--) {
-  arrNum.push(i * 2);
+	arrNum.push(i * 2);
 }
 console.log(arrNum);

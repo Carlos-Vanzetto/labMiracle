@@ -33,9 +33,8 @@ function difSim(arr1, arr2) {
 	return arrFiltered;
 }
 function sym(...args) {
-	let result = [...args].reduce((currentValue,nextValue)=>difSim(currentValue,nextValue));
-	return result.sort((a,b)=>a-b);
-	
+	let result = [...args].reduce((currentValue, nextValue) => difSim(currentValue, nextValue));
+	return result.sort((a, b) => a - b);
 }
 
 console.log(sym([1, 2, 3], [5, 2, 1, 4])); //debe devolver [3, 4, 5]
@@ -44,7 +43,5 @@ let result = sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5]);
 console.log(result); //debe devolver [1, 4, 5]
 result = sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3]); //debe contener solo cinco elementos
 console.log(result);
-result = sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8],
-	[1])// debe devolver [1, 2, 4, 5, 6, 7, 8, 9]
-console.log(result);	
-
+result = sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1]); // debe devolver [1, 2, 4, 5, 6, 7, 8, 9]
+console.log(result);

@@ -2,7 +2,7 @@
 const array = [];
 let x = 5;
 while (x >= 0) {
-  array.push(x);
-  x--;
+	array.push(x);
+	x--;
 }
 console.log(array);

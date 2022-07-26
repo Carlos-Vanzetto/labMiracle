@@ -4,6 +4,6 @@
  */
 const arrNum = [];
 for (let i = 0; i < 6; i++) {
-  arrNum.push(i);
+	arrNum.push(i);
 }
 console.log(arrNum);
