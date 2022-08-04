@@ -129,7 +129,9 @@ class CircularQueue extends Queue{
   console.log(testQueue.dequeue());
   console.log(testQueue.dequeue());
   testQueue.print();
-// CircularQueue test
+
+//    ***** CircularQueue test ******
+
 let circularQ = new CircularQueue(5);
 console.log(circularQ.isEmpty());
 circularQ.enqueue(10);
@@ -143,3 +145,28 @@ console.log(circularQ.dequeue());
 console.log(circularQ.dequeue());
 circularQ.print();
 
+// **** Hot potatoe *****
+
+hotPotatoe = (players,randomNum)=>{
+  const circQueue = new CircularQueue(players.length);
+  const eliminatedList = [];
+
+  for (let i = 0; i<players.length; i++){
+    circQueue.enqueue(players[i]);
+  }
+  while(circQueue.currentLenght>1){
+    for (let i = 0; i < randomNum; i++) {
+      circQueue.enqueue(circQueue.dequeue());    
+    }
+    eliminatedList.push(circQueue.dequeue());
+  }
+  return {
+    eliminated: eliminatedList,
+    winner:circQueue.dequeue()
+  };
+}
+
+let currentPlayers = ["Jose","Ana","Paula","Vito","Esteban","Enrique"];
+let randomNum = Math.floor(Math.random()*20);
+const {eliminated,winner} = hotPotatoe(currentPlayers,randomNum);
+console.log(eliminated,winner);
