@@ -1,0 +1,70 @@
+.skills {
+  padding: 2rem 6rem;
+}
+.skills-Monday-background-color {
+  background-color: #ccd5ae;
+}
+.skills-Tuesday-background-color {
+  background-color: #e9edc9;
+}
+.skills-Wednesday-background-color {
+  background-color: #fefae0;
+}
+.skills-Thursday-background-color {
+  background-color: #faedcd;
+}
+.skills-Friday-background-color {
+  background-color: #d4a373;
+}
+
+.skills__title {
+  color: #464646;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.skills__container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+
+.skill__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 16px;
+  background: #FFFFFF;
+  width: 176px;
+  height: 174px;
+  margin: 0px 16px;
+  -ms-box-shadow: 10px 10px 10px -2px rgba(0, 0, 0, 0.75);
+  -o-box-shadow: 10px 10px 10px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 10px -2px rgba(0, 0, 0, 0.75);
+  transition: all 1s ease;
+}
+.skill__box:hover {
+  -ms-box-shadow: 6px 6px 10px -9px rgba(0, 0, 0, 0.75);
+  -o-box-shadow: 6px 6px 10px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 10px -9px rgba(0, 0, 0, 0.75);
+}
+
+.skills__icon {
+  color: #0071ea;
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.skills__subtitle {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  color: #464646;
+}/*# sourceMappingURL=main.css.map */

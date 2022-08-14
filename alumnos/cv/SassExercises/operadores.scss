@@ -1,0 +1,11 @@
+@use 'sass:math';
+@import './_variables';
+
+.card{
+  background-color:$secondary-color;
+  border-radius: 10px;
+  box-shadow: $shadow;
+  box-sizing: border-box;
+  width: 300px;
+  transform: rotate(math.acos(0.5));
+}

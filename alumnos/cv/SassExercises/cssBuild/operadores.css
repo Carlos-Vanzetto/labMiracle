@@ -1,0 +1,8 @@
+.card {
+  background-color: #d6eaff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(85, 166, 255, 0.2196078431);
+  box-sizing: border-box;
+  width: 300px;
+  transform: rotate(60deg);
+}/*# sourceMappingURL=operadores.css.map */

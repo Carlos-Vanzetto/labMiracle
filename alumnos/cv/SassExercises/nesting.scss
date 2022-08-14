@@ -1,0 +1,9 @@
+@import './variables.scss','./functions.scss';
+.btn{
+  a{
+    background-color: $primary-color ;
+    &:hover{
+      background-color: invert($primary-color, 80%);
+    }
+  }
+}

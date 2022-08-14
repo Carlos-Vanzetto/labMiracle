@@ -1,0 +1,56 @@
+@import './functions','./mixins','./variables';
+
+.skills{
+  padding: 2rem 6rem;
+  @include modifiers($days,background-color)
+}
+.skills__title{
+  color: $font-color;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.skills__container{
+  
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+
+
+
+.skill__box{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 16px;
+  background: #FFFFFF;
+  width: 176px;
+  height: 174px;
+  margin: 0px 16px;
+  @include prefix-provider(box-shadow,$skill-shadow);
+  transition: $transition-val;
+  &:hover{
+    @include prefix-provider(box-shadow,$skill-shadow-hover);
+  }
+}
+
+
+.skills__icon{
+ color: $primary-color;
+ font-size: 30px;
+ margin-bottom: 1rem;
+}
+
+.skills__subtitle{
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  color: $font-color;
+}
